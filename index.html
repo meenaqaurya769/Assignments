@@ -10,88 +10,160 @@
  
   <title>MauryaTechno Field</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #444;
-      padding: 10px;
-      text-align: left;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    nav li {
-      display: inline-block;
-      margin-right: 20px;
-      border: 1px whitesmoke;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-    }
-    main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-    }
-    .marquee {
-      background-color: #f0f0f0;
-      padding: 10px;
-      border: 1px solid #ddd;
-      width: 80%;
-      margin-bottom: 20px;
-    }
-    .motivation {
-      font-size: 24px;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-      clear: both;
-    }
-    .section {
-      background-color: #f7f7f7;
-      padding: 20px;
-      margin-bottom: 20px;
-      border: 1px solid #ddd;
-      width: 80%;
-    }
-    .section h2 {
-      margin-top: 0;
-    }
-    li{
-      background: grey;
-      border-radius: 3px;
-    }
-  </style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f7;
+  color: #2d3436;
+}
+
+header {
+  background-color: #0A3D62;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
+
+nav {
+  background-color: #3C6382;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 6px 10px;
+  background-color: #0A3D62;
+  border-radius: 6px;
+}
+
+nav li:hover {
+  background-color: #82ccdd;
+}
+
+.marquee {
+  background-color: #fff;
+  padding: 12px;
+  border: 1px solid #ddd;
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.motivation {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0A3D62;
+}
+
+.section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  width: 80%;
+  border-radius: 8px;
+}
+
+.section h2 {
+  margin-top: 0;
+  color: #0A3D62;
+}
+
+footer {
+  background-color: #0A3D62;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+}
+
+li.service {
+  background-color: #c8dfe6;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+/* -------------------------
+   Mobile Responsive Design
+   ------------------------- */
+@media (max-width: 768px) {
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  nav li {
+    display: block;
+    margin-right: 0;
+    padding: 10px 0;
+  }
+
+  .marquee,
+  .section {
+    width: 95%;
+  }
+
+  .motivation {
+    font-size: 18px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+}
+
+/* Very small screens (phones < 480px) */
+@media (max-width: 480px) {
+
+  nav li {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  .section h2 {
+    font-size: 18px;
+  }
+
+  body {
+    padding: 0;
+  }
+}
+
+</style>
 </head>
 <body>
   <header>
+    
     <h1>MauryaTechno Field</h1>
+    
     <p>Empowering BCA Students</p>
   </header>
   <nav>
     <ul>
       <li><a href="Home.html">Home</a></li>
     
-      <li><a href="contact.html">Notes</a></li>
+      <li><a href="Notes.html">Notes</a></li>
      
       <li><a href="questions.html">Questions</a></li>
     </ul>
